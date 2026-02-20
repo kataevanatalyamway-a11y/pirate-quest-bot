@@ -46,7 +46,7 @@ def get_language_keyboard():
         ]
     )
     return keyboard
-    def get_payment_keyboard(lang='ru'):
+def get_payment_keyboard(lang='ru'):
       keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
             [InlineKeyboardButton(text="💳 Оплатить 20€" if lang=='ru' else "💳 Pay 20€", callback_data="pay")],
