@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 class Database:
-    def init(self, db_name='quest_bot.db'):
+    def __init__(self, db_name='quest_bot.db'):
         self.conn = sqlite3.connect(db_name, check_same_thread=False)
         self.cursor = self.conn.cursor()
         self._create_tables()
@@ -130,4 +130,5 @@ class Database:
         self.cursor.execute('''
             UPDATE users SET last_activity = ? WHERE user_id = ?
         ''', (datetime.now(), user_id))
+
         self.conn.commit()
