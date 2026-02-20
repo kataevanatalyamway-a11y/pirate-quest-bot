@@ -1,5 +1,5 @@
 # config.py
-BOT_TOKEN = "8253739575:AAEHovX_o9GVaP5XBHw4NMecQ3osaVXwliA"  # замени на реальный
+BOT_TOKEN = "8253739575:AAHEqpB56M3JkYDZr5P8nagIZO2-nbirQto"  # замени на реальный
 ADMIN_IDS = [426767557]  # твой Telegram ID (узнай у @userinfobot)
 
 # Платёжные ключи Stripe (для теста можно оставить заглушку)
