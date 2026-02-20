@@ -46,15 +46,15 @@ def get_language_keyboard():
         ]
     )
     return keyboard
+
 def get_payment_keyboard(lang='ru'):
-      keyboard = InlineKeyboardMarkup(
+    keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
             [InlineKeyboardButton(text="💳 Оплатить 20€" if lang=='ru' else "💳 Pay 20€", callback_data="pay")],
             [InlineKeyboardButton(text="❓ Что я получу?" if lang=='ru' else "❓ What I get?", callback_data="info")]
         ]
     )
     return keyboard
-
 # Команда /start
 @dp.message(Command("start"))
 async def cmd_start(message: Message):
